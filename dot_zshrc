@@ -54,4 +54,4 @@ export PATH="$PATH:/Users/bda/.local/bin"
 export PATH=${PATH}:~/scripts
 
 # Syntax Highlighting
-source $(brew --prefix)/share/zsh-syntax-highlighting.zsh 2>/dev/null
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
