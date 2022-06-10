@@ -66,6 +66,7 @@ set expandtab		"tabs will expand to whitespace characters
 syntax enable			"turn syntax highlighting on
 filetype plugin indent on	"load plugin and indent files associated a detected filetype
 set foldmethod=syntax
+set re=0 "use new regular expression engine because .ts files are slow like cold molasses
 
 set backspace=eol,indent,start
 
