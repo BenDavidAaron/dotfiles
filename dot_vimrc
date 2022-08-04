@@ -41,7 +41,6 @@ filetype plugin indent on    " required
 
 " BDA's personal config
 nmap <C-n> :NERDTreeToggle<CR>
-set relativenumber
 set number
 set guifont=Source\ Code\ Pro:h14
 set scrolloff=3
@@ -78,3 +77,7 @@ highlight EndOfBuffer ctermbg=none
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/vendor,*/.vscode/*,*/node_modules/*,*/venv/*,*/env/*
 let g:ctrlp_max_depth=20
 let g:ctrlp_max_files=2500
+
+" Crosshairs
+set cursorline
+set cursorcolumn
