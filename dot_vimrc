@@ -73,3 +73,8 @@ set backspace=eol,indent,start
 
 highlight Normal ctermbg=none
 highlight EndOfBuffer ctermbg=none
+
+" Ignore some stuff in ctrlp
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/vendor,*/.vscode/*,*/node_modules/*,*/venv/*,*/env/*
+let g:ctrlp_max_depth=20
+let g:ctrlp_max_files=2500
