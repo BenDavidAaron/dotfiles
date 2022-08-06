@@ -22,6 +22,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'maxmellon/vim-jsx-pretty'
 Plugin 'aldur/vim-algorand-teal'
 Plugin 'tomlion/vim-solidity'
+Plugin 'prettier/vim-prettier'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -40,7 +41,6 @@ filetype plugin indent on    " required
 
 " BDA's personal config
 nmap <C-n> :NERDTreeToggle<CR>
-set relativenumber
 set number
 set guifont=Source\ Code\ Pro:h14
 set scrolloff=3
@@ -66,8 +66,18 @@ set expandtab		"tabs will expand to whitespace characters
 syntax enable			"turn syntax highlighting on
 filetype plugin indent on	"load plugin and indent files associated a detected filetype
 set foldmethod=syntax
+set re=0 "use new regular expression engine because .ts files are slow like cold molasses
 
 set backspace=eol,indent,start
 
 highlight Normal ctermbg=none
 highlight EndOfBuffer ctermbg=none
+
+" Ignore some stuff in ctrlp
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/vendor,*/.vscode/*,*/node_modules/*,*/venv/*,*/env/*
+let g:ctrlp_max_depth=20
+let g:ctrlp_max_files=2500
+
+" Crosshairs
+set cursorline
+set cursorcolumn
