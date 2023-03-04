@@ -20,3 +20,6 @@ vim.keymap.set("n", "Q", "<nop>")
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
+vim.keymap.set("n", "<leader>dp", vim.diagnostic.goto_prev, {})
+vim.keymap.set("n", "<leader>dn", vim.diagnostic.goto_next, {})
+vim.keymap.set("n", "<leader>t", ":FloatermNew<CR>")
