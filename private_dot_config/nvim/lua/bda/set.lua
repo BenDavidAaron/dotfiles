@@ -29,5 +29,4 @@ vim.opt.colorcolumn = "80"
 
 vim.g.mapleader = " "
 
-require('monokai').setup { pallette = require('monokai').ristretto }
-
+require('monokai').setup { palette = require('monokai').ristretto }
