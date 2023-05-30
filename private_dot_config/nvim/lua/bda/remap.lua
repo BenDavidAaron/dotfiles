@@ -3,6 +3,8 @@ vim.g.mapleader = " "
 --[[ Directory View --]]
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
+--[[ view whitespace --]]
+vim.keymap.set("n", "<leader>tw", ":set list!<CR>")
 
 --[[ Mark navigation --]]
 vim.keymap.set("n", "J", ":m '>+1<CR>gv=gv")
