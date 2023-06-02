@@ -43,5 +43,6 @@ return require('packer').startup(function(use)
 	    {'L3MON4D3/LuaSnip'},             -- Required
 	    {'rafamadriz/friendly-snippets'}, -- Optional
 	  }
-}
+  }
+  use('subnut/nvim-ghost.nvim')
 end)
