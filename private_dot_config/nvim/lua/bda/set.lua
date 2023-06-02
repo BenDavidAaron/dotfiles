@@ -29,4 +29,9 @@ vim.opt.colorcolumn = "80"
 
 vim.g.mapleader = " "
 
+vim.opt.hlsearch = false
+vim.opt.incsearch = true
+vim.opt.ignorecase = true
+
+
 require('monokai').setup { palette = require('monokai').ristretto }

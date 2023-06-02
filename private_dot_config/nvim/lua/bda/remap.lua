@@ -6,6 +6,9 @@ vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 --[[ view whitespace --]]
 vim.keymap.set("n", "<leader>tw", ":set list!<CR>")
 
+--[[ Toggle Search Result Highlighting --]]
+vim.keymap.set("n", "<leader>hl", ":set hlsearch!<CR>")
+
 --[[ Mark navigation --]]
 vim.keymap.set("n", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("n", "K", ":m '>-2<CR>gv=gv")
