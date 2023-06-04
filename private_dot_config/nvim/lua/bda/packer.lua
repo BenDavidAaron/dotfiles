@@ -23,6 +23,12 @@ return require('packer').startup(function(use)
   use('voldikss/vim-floaterm')
   use('tanvirtin/monokai.nvim')
   use {
+	  'lewis6991/gitsigns.nvim',
+	  config = function()
+		  require('gitsigns').setup()
+	  end
+  }
+  use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v1.x',
 	  requires = {
