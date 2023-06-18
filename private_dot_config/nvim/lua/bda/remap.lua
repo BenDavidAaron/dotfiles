@@ -4,7 +4,10 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 --[[ view whitespace --]]
-vim.keymap.set("n", "<leader>tw", ":set list!<CR>")
+vim.keymap.set("n", "<leader>vw", ":set list!<CR>")
+
+--[[ Remove trailing whitespace and normalize leading whitespace--]]
+vim.keymap.set("n", "<leader>rw", [[:%s/\s\+$//e<CR>]])
 
 --[[ Toggle Search Result Highlighting --]]
 vim.keymap.set("n", "<leader>hl", ":set hlsearch!<CR>")
