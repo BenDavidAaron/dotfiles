@@ -20,13 +20,6 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots)		# Include hidden files.
 
-# Use vim keys in tab complete menu:
-bindkey -M menuselect 'h' vi-backward-char
-bindkey -M menuselect 'k' vi-up-line-or-history
-bindkey -M menuselect 'l' vi-forward-char
-bindkey -M menuselect 'j' vi-down-line-or-jistory
-bindkey -v '^?' backward-delete-char
-
 # Github Issues told me to add this to fix ioctl errors in gpg
 export GPG_TTY=$(tty)
 
@@ -54,6 +47,9 @@ source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 # Editor
 export EDITOR="nvim"
+alias vi=nvim
+alias vim=nvim
+
 
 # Add some nvim executables to path
 export PATH="$PATH:~/.local/share/nvim/mason/bin"
